@@ -1,0 +1,40 @@
+{
+  "test": {
+    "use_env_variable": "TEST_DB_CONNECTION_URL",
+    "logging": true,
+    "dialect": "postgres",
+    "timezone": "+05:30",
+    "pool": {
+      "max": 5,
+      "min": 0,
+      "acquire": 30000,
+      "idle": 10000
+    }
+  },
+  "pre-prod": {
+    "use_env_variable": "PRE_PROD_DB_CONNECTION_URL",
+    "logging": true,
+    "dialect": "postgres",
+    "timezone": "+05:30",
+    "pool": {
+      "max": 5,
+      "min": 0,
+      "acquire": 30000,
+      "idle": 10000
+    }
+  }
+
+  ,
+  "production": {
+    "use_env_variable": "PROD_DB_CONNECTION_URL",
+    "logging": true,
+    "dialect": "postgres",
+    "timezone": "+05:30",
+    "pool": {
+      "max": 5,
+      "min": 0,
+      "acquire": 30000,
+      "idle": 10000
+    }
+  }
+}
