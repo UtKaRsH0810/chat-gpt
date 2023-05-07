@@ -42,7 +42,6 @@ async function generateId() {
 
 module.exports = {
   generateUniqueId,
-  generateHashPassword,
  generateId,
  generatePassword
 };
